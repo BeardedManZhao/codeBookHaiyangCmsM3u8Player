@@ -51,11 +51,10 @@
 <div id="player"></div>
 
 <script>
-    const s = 'https://hoplayer.com/index.html?url=' + parent.now;
+    const s = atob("aHR0cHM6Ly9ob3BsYXllci5jb20vaW5kZXguaHRtbD91cmw9");
 
     setTimeout(() => {
-        document.querySelector("#zzzif").src = s;
-        console.info("码本科技开发", s);
+        document.querySelector("#zzzif").src = s + parent.now;
     }, 3000);
 
 </script>
