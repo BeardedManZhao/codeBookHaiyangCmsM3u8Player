@@ -9,3 +9,4 @@
 ## 联系技术服务
 
 我们提供代部署操作，请加 QQ群（931546838）联系！
+![图片1](https://github.com/user-attachments/assets/8e551e0a-b7a9-49ef-ab6b-8827396d6d3a)

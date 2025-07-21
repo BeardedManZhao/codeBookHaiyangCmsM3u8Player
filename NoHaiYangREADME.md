@@ -6,6 +6,8 @@
 
 ![](https://img.shields.io/badge/QQ-931546838-blue)
 
+![图片1](https://github.com/user-attachments/assets/fcfec482-68d9-4fd4-9149-51085306a46e)
+
 ## 可能的错误情况
 
 - 直接打开了页面 或者 非海洋播放器
