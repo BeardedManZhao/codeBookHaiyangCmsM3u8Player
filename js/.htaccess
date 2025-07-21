@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# 将 /player/.html 映射到 /player/error.html
+RewriteCond %{REQUEST_URI} ^/js/player/\.html$
+RewriteRule ^(.*)$ /js/player/error.html [L]
