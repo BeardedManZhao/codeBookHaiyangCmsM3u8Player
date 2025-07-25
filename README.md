@@ -16,6 +16,8 @@
 
 我们提供 一对一技术协助与代部署服务，欢迎加入QQ群 931546838 获取帮助与交流！
 
+您可以使用 qq群来联系我们：![](https://img.shields.io/badge/QQ-931546838-blue)
+
 也支持定制服务
 
 ![图片1](https://github.com/user-attachments/assets/8e551e0a-b7a9-49ef-ab6b-8827396d6d3a)
