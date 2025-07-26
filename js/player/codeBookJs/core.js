@@ -39,7 +39,7 @@
     const spinner = document.getElementById('spinner');
     const particlesCanvas = document.getElementById('particles');
     const menu = document.getElementById('context-menu');
-    const errorRedirect = atob("aHR0cHM6Ly9iZWFyZGVkbWFuemhhby5naXRodWIuaW8vY29kZUJvb2tIYWl5YW5nQ21zTTN1OFBsYXllci9qcy9wbGF5ZXIvZXJyb3IuaHRtbA==");
+    const errorRedirect = atob("aHR0cHM6Ly9iZWFyZGVkbWFuemhhby5naXRodWIuaW8vY29kZUJvb2tIYWl5YW5nQ21zTTN1OFBsYXllci9qcy9wbGF5ZXIvZXJyb3IuaHRtbA==") + "#v1.4";
 
     const params = new URLSearchParams(window.location.search);
     const srcUrl = params.get('url');
