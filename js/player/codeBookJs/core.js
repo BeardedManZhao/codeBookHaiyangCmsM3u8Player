@@ -1,4 +1,25 @@
 (function() {
+    async function copyText(textToCopy) {
+        try {
+            await window.navigator.clipboard.writeText(textToCopy);
+            return true;
+        } catch (err) {
+            return false;
+        }
+    }
+    function copyTextToClipboard(text) {
+        try {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            return true;
+        } catch (e) {
+            return false;
+        }
+    }
     const textShow = document.getElementById("textShow");
     const textShowText = ["启动中.", "码本播放器正常...", "加载视频中..."];
     let nowTextIndex = 0, nowTextInnerText = 0;
@@ -66,7 +87,20 @@
     });
 
     // 下载视频功能
-    dlBtn.addEventListener("click", () => prompt("请复制下载链接", srcUrl));
+    dlBtn.addEventListener("click", () => {
+        copyText(srcUrl).then(
+            (res) => {
+                dlBtn.innerText = "已复制";
+                if (res) {
+                    dlBtn.innerText = "已复制";
+                } else if (copyTextToClipboard(srcUrl)) {
+                    dlBtn.innerText = "已复制";
+                } else {
+                    dlBtn.innerText = "浏览器阻止复制"
+                }
+            }
+        )
+    });
 
     // 隐藏菜单
     hidden.addEventListener("click", () => menu.style.display = 'none');
