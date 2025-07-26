@@ -66,12 +66,7 @@
     });
 
     // 下载视频功能
-    dlBtn.addEventListener("click", () => {
-        const a = document.createElement('a');
-        a.href = srcUrl;
-        a.download = srcUrl.split('/').pop().split('?')[0];
-        document.body.appendChild(a); a.click(); document.body.removeChild(a);
-    })
+    dlBtn.addEventListener("click", () => prompt("请复制下载链接", srcUrl));
 
     // 隐藏菜单
     hidden.addEventListener("click", () => menu.style.display = 'none');
